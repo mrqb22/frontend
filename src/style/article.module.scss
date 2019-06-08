@@ -1,0 +1,32 @@
+@import 'variables';
+
+.container {
+  padding: $vr2 $vr2 2*$vr2;
+  font-family: $regular;
+}
+.title {
+  color: $primary;
+  font-family: $demibold;
+  font-size: ms(1);
+  text-align: center;
+}
+.update {
+  color: $primary;
+  text-align: center;
+  margin-bottom: 2*$vr1;
+}
+.subtitle {
+  font-family: $demibold;
+  font-size: 20px;
+  margin: $vr1 0 $vr1;
+}
+.link {
+  color: $primary;
+  text-decoration: underline;
+  &:hover {
+    color: $primary;
+  }
+}
+.wrap {
+  word-wrap: break-word;
+}

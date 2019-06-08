@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: */dashboard
+Disallow: */invoices
+Disallow: */change-password
+Disallow: */change-email

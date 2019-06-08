@@ -1,0 +1,44 @@
+@import '~modularscale-sass/stylesheets/modularscale';
+
+$primary: #f8e71c;
+$background: #1a1a1a;
+$body-background-color: #1a1a1a;
+$table-background-color: #1a1a1a;
+$table-row-hover-background-color: lighten($table-background-color, 3%);
+$grey: #565656;
+$table-color: white;
+$table-cell-border: 1px solid $grey;
+$table-cell-heading-color: white;
+$table-head-cell-color: white;
+$red: #e21a47;
+$green: green;
+$button-background-color: $primary;
+$button-color: $background;
+$button-border-color: $primary;
+$button-hover-border-color: $primary;
+$button-hover-color: $background;
+$dropdown-content-background-color: #1a1a1a;
+$navbar-item-color: white;
+$link: white;
+$link-hover: white;
+$text: white;
+$dropdown-item-color: white;
+$dropdown-item-hover-color: white;
+$dropdown-content-radius: 1px;
+$dropdown-content-shadow: none;
+$dropdown-content-offset: 0;
+$regular: 'AvenirNext-Regular';
+$medium: 'AvenirNext-Medium';
+$demibold: 'AvenirNext-DemiBold';
+$bold: 'AvenirNext-Bold';
+$modularscale: (
+  base: 1em,
+  ratio: $golden
+);
+$lh1: 1.5; // line-height
+$lh2: 1.8;
+$rfs: 16px; //root font-size, bulma default
+$vr1: $lh1*$rfs; //vertical rhythm
+$vr2: $lh2*$rfs;
+$table-cell-padding: $vr1/2 2*$vr1;
+$family-primary: $regular;

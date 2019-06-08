@@ -1,0 +1,15 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.title {
+  color: $primary;
+  font-family: $demibold;
+  font-size: ms(1);
+  text-align: center;
+}

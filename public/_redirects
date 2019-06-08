@@ -1,0 +1,4 @@
+/graphql/*  http://api.muraqaba.io/graphql/:splat  200
+/graphqltest/* https://vpn-odobxvuyqr.now.sh/graphql/:splat 200
+/btcpay/*  https://btcpay.muraqaba.io/:splat  200
+/*  /index.html  200

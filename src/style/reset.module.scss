@@ -1,0 +1,89 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+@import '~bulma/sass/utilities/mixins';
+@import 'variables';
+
+.reset {
+  flex: 1;
+  padding: $vr2 $vr2;
+  margin-top: $vr2 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border: solid 1px $grey;
+  padding: 2*$vr1;
+  display: flex;
+  flex-direction: column;
+  width: 17*$vr1;
+  @include mobile {
+    border: none;
+    padding: unset;
+    width: 70vw;
+  }
+}
+.title {
+  font-family: $medium;
+  font-size: ms(1);
+  color: $primary;
+  text-align: center;
+  margin-bottom: $vr1;
+}
+.error {
+  font-size: 12px;
+  text-align: center;
+  font-family: $regular;
+  color: $red;
+}
+.input {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: $background;
+  outline: none;
+  color: white;
+  font-size: ms(0);
+  font-family: $regular;
+  padding: 0 $vr1 $vr1/2 0;
+  margin-top: $vr1;
+  width: 100%;
+  &::placeholder {
+    font-size: ms(0);
+    font-family: $regular;
+  }
+}
+.button {
+  margin: 1.5*$vr1 auto 0;
+  width: 70%;
+  font-family: $medium;
+}
+.please {
+  font-family: $regular;
+  text-align: center;
+}
+.input {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: $background;
+  outline: none;
+  color: white;
+  font-size: ms(0);
+  font-family: $regular;
+  padding: 0 $vr1 $vr1/2 0;
+  margin-top: $vr1;
+  width: 100%;
+  &::placeholder {
+    font-size: ms(0);
+    font-family: $regular;
+  }
+}
+.password {
+  position: relative;
+}
+.icon {
+  height: 18.5px;
+  position: absolute;
+  right: 1px;
+  margin-top: $vr1;
+  cursor: pointer;
+}

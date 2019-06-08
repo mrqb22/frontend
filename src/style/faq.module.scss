@@ -1,0 +1,59 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+@import '~bulma/sass/utilities/mixins';
+@import 'variables';
+
+.container {
+  padding: $vr2 $vr2 2*$vr2;
+  font-family: $regular;
+}
+.title {
+  color: $primary;
+  font-family: $demibold;
+  font-size: ms(1);
+  text-align: center;
+  margin: 0 0 1.5*$vr1;
+  &:not(:first-child) {
+    margin: 2*$vr1 0 1.5*$vr1;
+  }
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.item {
+  width: 45%;
+  margin-top: $vr1;
+  @include mobile {
+    width: 90%;
+    text-align: center;
+    margin-top: $vr1;
+    margin-bottom: $vr1;
+  }
+}
+.subtitle {
+  font-family: $demibold;
+  font-size: 20px;
+  margin: 0 0 $vr1;
+}
+.link {
+  color: $primary;
+  text-decoration: underline;
+  &:hover {
+    color: $primary;
+  }
+}
+.read {
+  font-family: $demibold;
+  @extend .link;
+}
+.readc {
+  margin-top: $vr1/2;
+}

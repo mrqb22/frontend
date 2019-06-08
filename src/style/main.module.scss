@@ -1,0 +1,143 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+// https://github.com/jgthms/bulma/issues/1862
+@import '~bulma/sass/utilities/mixins';
+@import 'variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 $vr2 0;
+}
+.title {
+  font-family: $demibold;
+  font-size: ms(2);
+  text-align: center;
+  margin-top: 2*$vr1;
+  @include mobile {
+    font-size: ms(1);
+  }
+}
+.subtitle {
+  text-align: center;
+  font-family: $regular;
+  font-size: ms(1);
+  margin-top: $vr1;
+  @include mobile {
+    font-size: ms(0);
+  }
+}
+.yellow {
+  color: $primary;
+}
+.price {
+  font-weight: lighter;
+}
+.button {
+  margin: 0 auto;
+  color: $background !important;
+  font-family: $demibold;
+  margin-top: $vr1;
+  @include mobile {
+    font-size: ms(0) !important;
+  }
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3*$vr1;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.item {
+  width: 45%;
+  margin-top: 2*$vr1;
+  @include mobile {
+    width: 90%;
+    text-align: center;
+    margin-top: $vr1;
+    margin-bottom: $vr1;
+  }
+}
+.itemUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include mobile {
+    justify-content: center;
+  }
+}
+.icon {
+  height: 30px;
+}
+.itemTitle {
+  font-family: $demibold;
+  font-size: ms(1);
+  display: flex;
+  flex-direction: column;
+  margin-left: $vr1;
+  margin-bottom: -8px;
+  border-bottom: 5px solid $primary;
+  @include mobile {
+    font-size: 20px;
+    border-bottom: 3px solid $primary;
+  }
+}
+.line {
+  margin-top: -20px;
+  background: transparent;
+}
+.itemText {
+  font-family: $regular;
+  margin-top: $vr1;
+}
+.locations {
+  margin: 4*$vr1 0 2*$vr1;
+  padding: 2*$vr1 0 2*$vr1;
+  background-color: #2A2A2A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.locationsTitle {
+  font-family: $demibold;
+  font-size: ms(2);
+  background-color: #2A2A2A;
+  @include mobile {
+    font-size: ms(1);
+  }
+}
+.countries {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #2A2A2A;
+  margin-top: $vr1;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: $regular;
+  font-size: ms(1);
+  background-color: #2A2A2A;
+  &:not(:first-child) {
+    margin-left: 1.5*$vr1;
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+}
+.flag {
+  height: 30px;
+  margin-right: 0.5*$vr1;
+}

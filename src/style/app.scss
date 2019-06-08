@@ -1,0 +1,31 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+@import 'variables';
+@import '~bulma/bulma';
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url(/fonts/AvenirBold.woff2) format('woff2');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'AvenirNext-DemiBold';
+  src: url(/fonts/AvenirDemi-bold.woff2) format('woff2');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url(/fonts/AvenirMedium.woff2) format('woff2');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url(/fonts/AvenirRegular.woff2) format('woff2');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Monaco';
+  src: url(/fonts/Monaco.woff2) format('woff2');
+  font-display: fallback;
+}

@@ -1,0 +1,91 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+@import '~bulma/sass/utilities/mixins';
+@import 'variables';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $vr2 $vr2;
+  @include mobile {
+    padding: $vr2 $vr2/2;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wgad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2*$vr2;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: $vr2/2;
+  @include mobile {
+    font-size: 15px;
+  }
+}
+.logo {
+  height: 60px;
+  max-height: unset !important;
+}
+.muraqaba {
+  font-family: $demibold;
+  font-size: ms(1);
+}
+.finland {
+  font-family: 'Monaco';
+  white-space: nowrap;
+  @include mobile {
+    font-size: 10px;
+  }
+}
+.links {
+  font-family: $medium;
+}
+.primaryColor {
+  color: $primary;
+  &:hover {
+    color: $primary;
+  }
+}
+.flag {
+  height: $rfs;
+}
+.mobileMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.linksMargin {
+  margin: 0 $vr2;
+}
+.menuLink {
+  margin-right: $vr2;
+  cursor: pointer;
+}
+.dropdownMenu {
+  border: 1px solid $grey;
+  width: 170px;
+  margin-top: -22px;
+  margin-left: 22px;
+}
+.divider {
+  background-color: $grey;
+}
+.connected {
+  color: $green;
+  &:hover {
+    color: $green;
+  }
+}

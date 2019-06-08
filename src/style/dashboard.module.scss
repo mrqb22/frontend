@@ -1,0 +1,172 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+@import '~bulma/sass/utilities/mixins';
+@import 'variables';
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $vr2;
+  @include mobile {
+    margin-top: 0;
+  }
+}
+.cp {
+  border: 1px solid $grey;
+  border-radius: 2px;
+  padding: $vr1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 600px;
+  margin-bottom: 2*$vr1;
+  @include mobile {
+    border: none;
+    width: 100vw;
+    margin-bottom: $vr1;
+    min-width: unset;
+  }
+}
+.hello {
+  font-size: ms(1);
+  color: $primary;
+  font-family: $demibold;
+}
+.logout {
+  color: white;
+  margin-left: $vr1/2;
+  span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.expires {
+  font-size: ms(0);
+  color: white;
+  font-family: $medium;
+  margin-top: $vr1;
+  @include mobile {
+    text-align: center;
+  }
+}
+.cpContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $vr1;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.extend {
+  font-size: ms(0);
+  color: white;
+  font-family: $regular;
+  margin-right: $vr1;
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: $vr1;
+  }
+}
+.select {
+  select {
+    background-color: $background;
+    color: white;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    font-family: $regular;
+    font-size: ms(0);
+    padding: $vr1/4 $vr1/2;
+  }
+}
+.button {
+  margin-left: $vr1;
+  font-family: $medium;
+  @include mobile {
+    margin-left: 0;
+    margin-top: $vr1;
+    width: 100%;
+  }
+}
+.cpLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5*$vr1;
+  font-family: $regular;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 90%;
+  div {
+    color: #d0021b;
+    text-decoration: underline;
+    text-decoration-color: #d0021b;
+  }
+  @include mobile {
+    margin-top: $vr1;
+    margin-bottom: $vr1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin-bottom: $vr1;
+    }
+  }
+}
+.configs {
+  @extend .cp;
+  @include mobile {
+    background-color: #222222;
+  }
+}
+.configTitle {
+  font-size: ms(1);
+  color: $primary;
+  font-family: $demibold;
+}
+.configInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $vr1;
+  width: 90%;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+.configSelect {
+  @extend .select;
+}
+.buttons {
+  margin-top: 1.5*$vr1;
+  font-family: $regular;
+  @include mobile {
+    margin-top: $vr1;
+    margin-bottom: $vr1;
+    width: 60%;
+  }
+}
+.outline {
+  &:hover {
+    background-color: transparent !important;
+    color: $primary !important;
+  }
+}
+.configSelectTitle {
+  margin-bottom: 5px;
+}
+.configSelectContainer {
+  @include mobile {
+    margin-top: $vr1;
+  }
+}
